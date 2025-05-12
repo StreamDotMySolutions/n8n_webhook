@@ -11,7 +11,13 @@ class DocumentController extends Controller
      */
     public function index()
     {
-        //
+        // Fetch all documents from the database
+        $documents = ['file1,doc','file2.doc'] ;
+
+        // Return the documents as a JSON response
+        return response()->json($documents);
+
+    
     }
 
     /**
